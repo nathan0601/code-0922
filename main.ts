@@ -1,4 +1,14 @@
+input.onButtonPressed(Button.A, function () {
+    basic.showNumber(0)
+})
 basic.forever(function () {
+    basic.showLeds(`
+        # # # # #
+        # . # . #
+        # # . # #
+        # . . . #
+        # . # . #
+        `)
     basic.showIcon(IconNames.EigthNote)
     basic.pause(1000)
     basic.showNumber(0)
